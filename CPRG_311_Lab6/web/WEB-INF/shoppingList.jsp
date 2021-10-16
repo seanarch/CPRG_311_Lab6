@@ -13,8 +13,15 @@
     </head>
     <body>
         <h1>Shopping List</h1>
-        <label>Username:</label>
-        <input type="text" name="user_name" >
-        <input type="submit" value="Register name">
+        <p>Hello, ${username}</p>
+        <a href="login?logout">Logout</a>
+        <br>
+        <h2>List</h2>
+        <p>Add item:</p>
+        <input type="text" name="add_item">
+        <input type="submit" value="Add">
+        <p>Placeholder</p>
+        <br>
+        <input type="submit" value="Delete">
     </body>
 </html>
