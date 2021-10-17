@@ -51,6 +51,23 @@ public class ShoppingListServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
+        HttpSession session = request.getSession(); 
+        
+        String input_username = request.getParameter("user_name");
+        
+        if (input_username != "") {
+            session.setAttribute("username", input_username);
+            getServletContext().getRequestDispatcher("/WEB-INF/shoppingList.jsp").forward(request, response); 
+            return;
+        } else {
+            request.setAttribute("loginErr", "Invalid name.");
+            getServletContext().getRequestDispatcher("/WEB-INF/register.jsp").forward(request, response);
+            return;              
+        }
+          
+ 
+
+
     }
 
 

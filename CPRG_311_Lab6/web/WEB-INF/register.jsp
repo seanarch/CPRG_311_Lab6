@@ -13,9 +13,12 @@
     </head>
     <body>
         <h1>Shopping List</h1>
+        <form method="post" action="shopping">
         <label>Username:</label>
-        <input type="text" name="user_name" >
+        <input type="text" name="user_name" value="${username}">
         <input type="submit" value="Register name">
+        </form>
+        <p>${loginErr}</p>
         <p>${logoutMsg}</p>
     </body>
 </html>
