@@ -14,7 +14,7 @@
     </head>
     <body>
         <h1>Shopping List</h1>
-        <p>Hello, ${username} <a href="shopping?logout">Logout</a></p>
+        <p>Hello, ${username} <a href="shopping?action=logout">Logout</a></p>
  
         <h2>List</h2>
         <form method="post" action="">
