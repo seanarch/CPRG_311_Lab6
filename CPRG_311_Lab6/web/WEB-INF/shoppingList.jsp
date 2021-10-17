@@ -27,7 +27,8 @@
         
         <form>
         <c:forEach var="item" items="${items}" >  
-            <li><input type="radio" name="additem" value="${item}">${item}</li>
+            <input type="radio" name="additem" value="${item}">${item}
+            <br>
         </c:forEach>  
         <br>
         <input type="submit" value="Delete">

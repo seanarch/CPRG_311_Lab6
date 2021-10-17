@@ -16,6 +16,7 @@
         <form method="post" action="shopping">
         <label>Username:</label>
         <input type="text" name="user_name" value="${username}">
+        <input type="hidden" name="action" value="register">
         <input type="submit" value="Register name">
         </form>
         <p>${loginErr}</p>
