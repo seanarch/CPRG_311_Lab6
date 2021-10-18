@@ -25,7 +25,7 @@
         </p>
         </form>
         
-        <form>
+        <form method="post" action="">
         <c:forEach var="item" items="${items}" >  
             <input type="radio" name="additem" value="${item}">${item}
             <br>
